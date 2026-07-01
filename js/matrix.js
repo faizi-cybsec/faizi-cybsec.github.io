@@ -1,28 +1,53 @@
-const canvas = document.getElementById('matrix');
-const ctx = canvas.getContext('2d');
+const canvas =
+    document.getElementById("matrix");
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+const ctx =
+    canvas.getContext("2d");
 
-const chars =
-'01';
+function resizeCanvas() {
 
-const array = chars.split('');
+    canvas.width =
+        window.innerWidth;
+
+    canvas.height =
+        window.innerHeight;
+
+    initializeDrops();
+}
+
+const chars = "01";
+const array = chars.split("");
 
 const fontSize = 14;
 
-const columns =
-canvas.width / fontSize;
+let columns;
+let drops = [];
 
-const drops = [];
+function initializeDrops() {
 
-for(let x=0;x<columns;x++)
-    drops[x]=1;
+    columns =
+        Math.floor(
+            canvas.width / fontSize
+        );
 
-function draw(){
+    drops = [];
+
+    for(let i=0;i<columns;i++) {
+        drops.push(1);
+    }
+}
+
+resizeCanvas();
+
+window.addEventListener(
+    "resize",
+    resizeCanvas
+);
+
+function draw() {
 
     ctx.fillStyle =
-    'rgba(0,0,0,0.05)';
+        "rgba(0,0,0,0.05)";
 
     ctx.fillRect(
         0,
@@ -32,39 +57,39 @@ function draw(){
     );
 
     ctx.fillStyle =
-    '#00ff41';
+        "#00ff41";
 
     ctx.font =
-    fontSize +
-    'px monospace';
+        `${fontSize}px monospace`;
 
-    for(let i=0;i<drops.length;i++){
+    for(let i=0;i<drops.length;i++) {
 
         const text =
-        array[
-            Math.floor(
-                Math.random()*array.length
-            )
-        ];
+            array[
+                Math.floor(
+                    Math.random() *
+                    array.length
+                )
+            ];
 
         ctx.fillText(
             text,
-            i*fontSize,
-            drops[i]*fontSize
+            i * fontSize,
+            drops[i] * fontSize
         );
 
         if(
-            drops[i]*fontSize
-            >
-            canvas.height
-            &&
-            Math.random()>0.975
-        ){
-            drops[i]=0;
+            drops[i] * fontSize >
+            canvas.height &&
+            Math.random() > 0.975
+        ) {
+            drops[i] = 0;
         }
 
         drops[i]++;
     }
+
+    requestAnimationFrame(draw);
 }
 
-setInterval(draw,33);
+draw();
