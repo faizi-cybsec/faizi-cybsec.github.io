@@ -1,39 +1,10 @@
-# 🔐 Faizan Ahmad - Cybersecurity Portfolio
+# 🔐 Faizan Ahmad
 
-A professional cybersecurity portfolio website built with HTML, CSS, and JavaScript featuring a dark hacker-inspired design.
+![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Student-green)
+![Linux](https://img.shields.io/badge/Linux-Kali-success)
+![GitHub Pages](https://img.shields.io/badge/Hosted-GitHub%20Pages-black)
 
-## 🚀 Live Website
-
-https://faizi-cybsec.github.io/
-
-## 👨‍💻 About
-
-Cybersecurity Student | SOC Analyst Aspirant | Ethical Hacking Enthusiast
-
-This portfolio showcases:
-
-- Cybersecurity skills
-- Projects
-- Experience
-- Certifications
-- Learning journey
-- Security research interests
-
-## 🛠 Technologies
-
-- HTML5
-- CSS3
-- JavaScript
-- GitHub Pages
-
-## 🎯 Features
-
-- Matrix animation
-- Kali Linux terminal interface
-- Interactive shell commands
-- Responsive design
-- Multi-page layout
-- Hacker aesthetic UI
+Cybersecurity Student | Security Research | Cyber Defense | Network Security
 
 ## 📫 Contact
 
