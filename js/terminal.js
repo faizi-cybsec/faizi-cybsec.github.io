@@ -1,6 +1,17 @@
+const output =
+document.getElementById(
+    "terminal-output"
+);
+
+const input =
+document.getElementById(
+    "command-input"
+);
+
 const commands = {
-    help: `
-Available commands:
+
+help:`
+Available Commands
 
 whoami
 skills
@@ -9,56 +20,116 @@ education
 experience
 certs
 contact
-clear
 neofetch
+hack
+clear
 `,
 
-    whoami: `
+whoami:`
 Faizan Ahmad
+
 Cybersecurity Student
-Security Research | Cyber Defense
-`,
-
-    skills: `
-Network Security
-Information Security
-Linux Fundamentals
-Cyber Defense
 Security Research
+Cyber Defense
 `,
 
-    projects: `
-Network Reconnaissance Lab
-Web Security Testing Lab
-Home SOC Lab
+skills:`
+• Network Security
+• Information Security
+• Linux Fundamentals
+• Security Research
+• Cyber Defense
 `,
 
-    education: `
+projects:`
+• Network Reconnaissance Lab
+• Web Security Lab
+• SOC Monitoring Lab
+`,
+
+education:`
 BS Cyber Security
-2nd Semester Student
+2nd Semester
 `,
 
-    experience: `
+experience:`
 SEO Specialist
 Lead Generation Specialist
 `,
 
-    certs: `
+certs:`
 Digital Marketing
 HP Business Email Writer
 Office Management
 `,
 
-    contact: `
-Email: work.fayzan@gmail.com
-Github: faizi-cybsec
-LinkedIn: fayzn-ahmed
+contact:`
+Email:
+work.fayzan@gmail.com
+
+Github:
+faizi-cybsec
 `,
 
-    neofetch: `
-OS: Kali Linux
-User: faizan
-Shell: bash
-Role: Cybersecurity Student
+neofetch:`
+██████╗
+║ Kali Linux
+║ User: faizan
+║ Shell: bash
+║ Role: Cybersecurity Student
+`,
+
+hack:`
+Connecting...
+Scanning...
+Bypassing firewall...
+Access denied.
+Nice try :)
 `
 };
+
+input.addEventListener(
+    "keydown",
+    function(e){
+
+        if(e.key==="Enter"){
+
+            const cmd =
+            input.value
+            .trim()
+            .toLowerCase();
+
+            const div =
+            document.createElement(
+                "div"
+            );
+
+            div.innerHTML=
+            `
+            <br>
+            <span style="color:#00ff41">
+            faizan@kali:~$
+            </span>
+            ${cmd}
+            <br><br>
+            ${
+                commands[cmd]
+                ||
+                "Command not found"
+            }
+            `;
+
+            output.appendChild(
+                div
+            );
+
+            if(cmd==="clear"){
+                output.innerHTML="";
+            }
+
+            output.scrollTop=
+            output.scrollHeight;
+
+            input.value="";
+        }
+});
