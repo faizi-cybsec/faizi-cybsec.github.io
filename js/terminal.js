@@ -1,18 +1,21 @@
 const output =
-document.getElementById(
-    "terminal-output"
-);
+    document.getElementById(
+        "terminal-output"
+    );
 
 const input =
-document.getElementById(
-    "command-input"
-);
+    document.getElementById(
+        "command-input"
+    );
+
+if(output && input){
 
 const commands = {
 
-help:`
+help: `
 Available Commands
 
+help
 whoami
 skills
 projects
@@ -21,19 +24,25 @@ experience
 certs
 contact
 neofetch
+scan
 hack
+sudo
+pwd
+ls
+date
 clear
 `,
 
-whoami:`
+whoami: `
 Faizan Ahmad
 
 Cybersecurity Student
 Security Research
 Cyber Defense
+Information Security
 `,
 
-skills:`
+skills: `
 • Network Security
 • Information Security
 • Linux Fundamentals
@@ -41,50 +50,95 @@ skills:`
 • Cyber Defense
 `,
 
-projects:`
+projects: `
 • Network Reconnaissance Lab
 • Web Security Lab
 • SOC Monitoring Lab
 `,
 
-education:`
+education: `
 BS Cyber Security
 2nd Semester
 `,
 
-experience:`
+experience: `
 SEO Specialist
 Lead Generation Specialist
 `,
 
-certs:`
-Digital Marketing
-HP Business Email Writer
-Office Management
+certs: `
+• Digital Marketing
+• HP Business Email Writer
+• Office Management
 `,
 
-contact:`
+contact: `
 Email:
 work.fayzan@gmail.com
 
 Github:
 faizi-cybsec
+
+LinkedIn:
+fayzn-ahmed
 `,
 
-neofetch:`
+neofetch: `
 ██████╗
-║ Kali Linux
-║ User: faizan
-║ Shell: bash
-║ Role: Cybersecurity Student
+Kali Linux
+
+User:
+faizan
+
+Role:
+Cybersecurity Student
+
+Shell:
+bash
 `,
 
-hack:`
+scan: `
+Scanning target...
+
+22/tcp open ssh
+80/tcp open http
+443/tcp open https
+
+Scan complete.
+`,
+
+hack: `
 Connecting...
+
 Scanning...
+
 Bypassing firewall...
+
 Access denied.
+
 Nice try :)
+`,
+
+sudo: `
+Permission denied.
+
+You are not in the sudoers file.
+`,
+
+pwd: `
+/home/faizan
+`,
+
+ls: `
+projects
+skills
+certifications
+contact
+resume.pdf
+`,
+
+date: `
+${new Date().toString()}
 `
 };
 
@@ -95,41 +149,48 @@ input.addEventListener(
         if(e.key==="Enter"){
 
             const cmd =
-            input.value
-            .trim()
-            .toLowerCase();
+                input.value
+                    .trim()
+                    .toLowerCase();
+
+            if(cmd==="clear"){
+
+                output.innerHTML = "";
+
+                input.value = "";
+
+                return;
+            }
 
             const div =
-            document.createElement(
-                "div"
-            );
+                document.createElement(
+                    "div"
+                );
 
-            div.innerHTML=
-            `
-            <br>
-            <span style="color:#00ff41">
-            faizan@kali:~$
-            </span>
-            ${cmd}
-            <br><br>
-            ${
-                commands[cmd]
-                ||
-                "Command not found"
-            }
+            div.innerHTML = `
+                <br>
+                <span style="color:#00ff41">
+                faizan@kali:~$
+                </span>
+                ${cmd}
+                <br><br>
+                ${
+                    commands[cmd] ||
+                    "Command not found. Type 'help'."
+                }
             `;
 
             output.appendChild(
                 div
             );
 
-            if(cmd==="clear"){
-                output.innerHTML="";
-            }
+            output.scrollTop =
+                output.scrollHeight;
 
-            output.scrollTop=
-            output.scrollHeight;
-
-            input.value="";
+            input.value = "";
         }
-});
+    });
+
+input.focus();
+
+}
