@@ -4,7 +4,7 @@ A professional cybersecurity portfolio website built with HTML, CSS, and JavaScr
 
 ## 🚀 Live Website
 
-https://faizi-cybsec.github.io
+https://faizi-cybsec.github.io/
 
 ## 👨‍💻 About
 
