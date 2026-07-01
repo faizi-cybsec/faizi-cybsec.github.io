@@ -1,27 +1,20 @@
-setInterval(()=>{
+const threats = document.getElementById("threats");
+const ports = document.getElementById("ports");
+const logs = document.getElementById("logs");
 
-document.getElementById(
-"threats"
-).innerText=
-1400+
-Math.floor(
-Math.random()*100
-);
+if (threats && ports && logs) {
 
-document.getElementById(
-"ports"
-).innerText=
-65000+
-Math.floor(
-Math.random()*500
-);
+    setInterval(() => {
 
-document.getElementById(
-"logs"
-).innerText=
-4800+
-Math.floor(
-Math.random()*300
-);
+        threats.innerText =
+            1400 + Math.floor(Math.random() * 100);
 
-},1000);
+        ports.innerText =
+            65000 + Math.floor(Math.random() * 500);
+
+        logs.innerText =
+            4800 + Math.floor(Math.random() * 300);
+
+    }, 1000);
+
+}
