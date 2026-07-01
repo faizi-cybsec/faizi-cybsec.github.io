@@ -222,3 +222,26 @@ footer{
     max-height:350px;
     overflow-y:auto;
 }
+
+*{
+cursor:crosshair;
+}
+.terminal{
+animation:
+glow 2s
+infinite alternate;
+}
+
+@keyframes glow{
+
+from{
+box-shadow:
+0 0 10px #00ff41;
+}
+
+to{
+box-shadow:
+0 0 30px #00ff41;
+}
+
+}
