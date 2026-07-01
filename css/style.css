@@ -195,3 +195,30 @@ footer{
     border-top:1px solid #00ff41;
     color:#888;
 }
+
+.terminal-input{
+    display:flex;
+    padding:20px;
+    border-top:
+    1px solid #00ff41;
+}
+
+.terminal-input span{
+    color:#00ff41;
+}
+
+.terminal-input input{
+    flex:1;
+    background:black;
+    color:#00ff41;
+    border:none;
+    outline:none;
+    font-family:inherit;
+    margin-left:10px;
+}
+
+.terminal-body{
+    min-height:350px;
+    max-height:350px;
+    overflow-y:auto;
+}
