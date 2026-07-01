@@ -188,3 +188,10 @@ h3{
 ::-webkit-scrollbar-thumb{
     background:#00ff41;
 }
+footer{
+    margin-top:100px;
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #00ff41;
+    color:#888;
+}
