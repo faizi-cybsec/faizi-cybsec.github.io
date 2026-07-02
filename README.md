@@ -12,6 +12,6 @@ Cybersecurity Student | Security Research | Cyber Defense | Network Security
 - LinkedIn: https://linkedin.com/in/fayzn-ahmed
 - GitHub: https://github.com/faizi-cybsec
 
----
+----
 
 Designed and developed by Faizan Ahmad.
