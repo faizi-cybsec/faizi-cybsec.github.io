@@ -11,6 +11,7 @@ Cybersecurity Student | Security Research | Cyber Defense | Network Security
 - Email: work.fayzan@gmail.com
 - LinkedIn: https://linkedin.com/in/fayzn-ahmed
 - GitHub: https://github.com/faizi-cybsec
+- Website : https://faizi-cybsec.github.io/
 
 ----
 
