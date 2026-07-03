@@ -363,3 +363,26 @@ h1{
 }
 
 }
+
+.featured-project {
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 20px rgba(212,175,55,0.2);
+}
+
+.project-links {
+    margin-top: 20px;
+}
+
+.project-links a {
+    display: inline-block;
+    padding: 12px 20px;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.project-links a:hover {
+    background: #d4af37;
+    color: #000;
+}
