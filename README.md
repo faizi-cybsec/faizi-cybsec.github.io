@@ -13,6 +13,11 @@ Cybersecurity Student | Security Research | Cyber Defense | Network Security
 - GitHub: https://github.com/faizi-cybsec
 - Website : https://faizi-cybsec.github.io/index.html
 
+## 📄 License
+
+This project is licensed under the MIT License.
+
+
 ----
 
 Designed and developed by Faizan Ahmad.
