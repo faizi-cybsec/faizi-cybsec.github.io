@@ -1,0 +1,34 @@
+# Faizan Ahmed (faizi-cybsec) — Cybersecurity & SOC Portfolio
+
+> Aspiring SOC Level 1 Analyst, BS Cyber Security Student at The Superior University (2025–2029), and Open-Source Security Tool Developer based in Faisalabad, Punjab, Pakistan.
+
+## Profile Summary
+- **Name:** Faizan Ahmed
+- **Handle:** faizi-cybsec
+- **Focus:** SOC L1 Alert Triage, SIEM (Splunk, Wazuh, Microsoft Sentinel, IBM QRadar), Threat Detection, Incident Response, Linux & Network Security, Python & C++17 Security Automation.
+- **Education:** BS Cyber Security — The Superior University (Sep 2025 – 2029); Intermediate, Computer Science — Superior College (May 2023 – Jun 2025).
+- **Certifications:** Introduction to Cybersecurity; Diploma in English Language & Communication Skills; Digital Marketing. Active track: Google Cybersecurity Certificate, CompTIA Security+.
+- **Prior Experience:** 2+ years in SEO & Digital Research (Nextware Technologies Pvt Ltd, Fiverr, Cyborg Solutions Pvt. Ltd., Wapexp Institute of Information Technology).
+
+## Key Pages
+- [Home](https://faizi-cybsec.github.io/): Overview, interactive SOC terminal, stats, and featured projects.
+- [About](https://faizi-cybsec.github.io/about.html): Background, education, and system profile.
+- [Projects](https://faizi-cybsec.github.io/projects.html): Open-source cybersecurity repositories.
+- [Skills](https://faizi-cybsec.github.io/skills.html): SIEM, network security, forensics, and programming stack.
+- [Experience](https://faizi-cybsec.github.io/experience.html): Work history and transferable analytical skills.
+- [Certifications](https://faizi-cybsec.github.io/certifications.html): Completed credentials and SOC roadmap.
+- [Contact](https://faizi-cybsec.github.io/contact.html): Email and social profiles.
+
+## Open-Source Projects
+- [LogSentinel](https://github.com/faizi-cybsec/LogSentinel): Zero-dependency Python SOC log analyzer, Sigma-style detection rule engine (match, threshold, sequence), MITRE ATT&CK mapping, offline IOC enrichment, and JSON/CSV/HTML incident reporting.
+- [PasswordGuardian](https://github.com/faizi-cybsec/PasswordGuardian): C++17 cybersecurity toolkit for password strength analysis, Shannon entropy, crack-time estimation, and privacy-preserving HIBP k-Anonymity breach checking.
+- [file-hash-checker](https://github.com/faizi-cybsec/file-hash-checker): Python MD5, SHA-1, and SHA-256 file integrity verification tool for digital forensics.
+- [secure-password-vault](https://github.com/faizi-cybsec/secure-password-vault): Offline Android password manager built with Capacitor and Android Studio.
+
+## Official Links
+- Website: https://faizi-cybsec.github.io/
+- GitHub: https://github.com/faizi-cybsec
+- LinkedIn: https://www.linkedin.com/in/faizi-cybsec/
+- YouTube: https://www.youtube.com/@Faizi.CybSec
+- X (Twitter): https://x.com/faizicybsec
+- Email: work.fayzan@gmail.com
