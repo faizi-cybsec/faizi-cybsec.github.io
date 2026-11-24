@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://faizi-cybsec.github.io/sitemap.xml
