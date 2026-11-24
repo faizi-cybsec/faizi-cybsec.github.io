@@ -1,23 +1,17 @@
-# 🔐 Faizan Ahmad
+# Faizan Ahmad — Cybersecurity Portfolio (`faizi-cybsec.github.io`)
 
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Student-green)
-![Linux](https://img.shields.io/badge/Linux-Kali-success)
-![GitHub Pages](https://img.shields.io/badge/Hosted-GitHub%20Pages-black)
+Personal cybersecurity and SOC L1 portfolio website built with clean semantic HTML5, CSS3 (Cyber-Cyan & Emerald dark theme), and vanilla JavaScript.
 
-Cybersecurity Student | Security Research | Cyber Defense | Network Security
+## Features
+- **Multi-page architecture:** `index.html`, `about.html`, `skills.html`, `projects.html`, `experience.html`, `certifications.html`, and `contact.html`.
+- **Interactive SOC Terminal:** Built-in terminal emulator on the home page (`help`, `whoami`, `education`, `skills`, `projects`, `neofetch`, `contact`, `clear`) without scroll-hijacking auto-focus.
+- **Filterable Projects Showcase:** Highlights `LogSentinel`, `PasswordGuardian`, `file-hash-checker`, and `Secure Password Vault`.
+- **Responsive & Accessible:** Mobile navigation drawer, high-contrast cyber-cyan/emerald palette on `#0a0e17`, and a working contact form + one-click email copy.
 
-## 📫 Contact
+## Local Preview
 
-- Email: work.fayzan@gmail.com
-- LinkedIn: https://www.linkedin.com/in/faizi-cybsec/
-- GitHub: https://github.com/faizi-cybsec
-- Website : https://faizi-cybsec.github.io/index.html
+```bash
+python -m http.server 8000
+```
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
-
-----
-
-Designed and developed by Faizan Ahmad.
+Then open `http://localhost:8000` in your browser.
