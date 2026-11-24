@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Faizan Ahmed (faizi-cybsec) — Aspiring SOC Analyst, BS Cyber Security Student @ Superior University, and Security Tool Developer.">
+  <title>Faizan Ahmed | SOC &amp; Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">&gt;_ <span>faizi</span>.cybsec</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            Open to SOC L1 &amp; Cybersecurity Internships
+          </div>
+          <h1>Faizan Ahmed</h1>
+          <p class="hero-role">Aspiring SOC Analyst &bull; BS Cyber Security @ Superior University &bull; Security Tool Developer</p>
+          <p class="hero-desc">
+            I learn security by building, not just by studying theory. Currently preparing for SOC Level 1 Analyst roles while developing open-source tools in Python and C++17 — backed by 2+ years of analytical research, dashboard monitoring, and technical reporting experience.
+          </p>
+          <div class="btn-group">
+            <a href="projects.html" class="btn btn-primary">Explore Projects</a>
+            <a href="contact.html" class="btn btn-outline">Contact Me</a>
+            <a href="https://github.com/faizi-cybsec" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub Profile</a>
+          </div>
+        </div>
+
+        <div class="terminal" id="interactive-terminal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="terminal-title">faizan@soc-workstation:~</span>
+          </div>
+          <div class="terminal-body" id="terminal-output">
+            <div class="term-line term-muted">[init] Loading SOC environment &amp; detection modules...</div>
+            <div class="term-line term-cyan">[ok]   SIEM stack: Splunk | Wazuh | Sentinel | QRadar</div>
+            <div class="term-line term-emerald">[ok]   Session ready. Type 'help' to explore interactively.</div>
+          </div>
+          <div class="terminal-input-row">
+            <label for="terminal-input" class="terminal-prompt">faizan@soc:~$</label>
+            <input type="text" id="terminal-input" class="terminal-input" placeholder="Type 'help', 'projects', 'skills'..." autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-4">
+        <div class="card stat-card">
+          <div class="stat-value">4+</div>
+          <div class="stat-label">Open-Source Security Tools on GitHub</div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-value">9</div>
+          <div class="stat-label">MITRE ATT&amp;CK Rules in LogSentinel</div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-value">4</div>
+          <div class="stat-label">SIEM Platforms (Splunk, Wazuh, Sentinel, QRadar)</div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-value">SOC L1</div>
+          <div class="stat-label">Blue Team, Log Triage &amp; Incident Response Focus</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Featured Security Projects</h2>
+          <a href="projects.html" class="tag-label">View All 4 Projects &rarr;</a>
+        </div>
+        <div class="grid-2">
+          <article class="card">
+            <div class="badge-row">
+              <span class="badge">Python</span>
+              <span class="badge badge-emerald">SOC / SIEM</span>
+              <span class="badge">MITRE ATT&amp;CK</span>
+            </div>
+            <h3>LogSentinel</h3>
+            <p>
+              Zero-dependency SOC log analyzer, Sigma-style detection rule engine (match, threshold, sequence), offline IOC threat-intel enrichment, and JSON/CSV/HTML incident triage CLI.
+            </p>
+            <a href="https://github.com/faizi-cybsec/LogSentinel" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+          </article>
+
+          <article class="card">
+            <div class="badge-row">
+              <span class="badge">C++17</span>
+              <span class="badge">CMake</span>
+              <span class="badge badge-emerald">HIBP k-Anonymity</span>
+            </div>
+            <h3>PasswordGuardian</h3>
+            <p>
+              C++17 cybersecurity toolkit for password strength analysis, Shannon entropy &amp; crack-time estimation, secure generation, and privacy-preserving breach checking.
+            </p>
+            <a href="https://github.com/faizi-cybsec/PasswordGuardian" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Core SOC &amp; Security Focus</h2>
+          <span class="tag-label">Blue Team &amp; Automation</span>
+        </div>
+        <div class="grid-4">
+          <div class="card">
+            <h3>SIEM &amp; Log Triage</h3>
+            <p>Correlating auth, web, and cloud audit logs in Splunk, Wazuh, Microsoft Sentinel, and QRadar.</p>
+          </div>
+          <div class="card">
+            <h3>Threat Detection</h3>
+            <p>Writing MITRE ATT&amp;CK-mapped detection rules for brute force, privilege escalation, and web exploits.</p>
+          </div>
+          <div class="card">
+            <h3>Network &amp; Web Sec</h3>
+            <p>Packet inspection and vulnerability testing with Wireshark, Nmap, Burp Suite, and Kali Linux.</p>
+          </div>
+          <div class="card">
+            <h3>Security Tooling</h3>
+            <p>Building fast CLI utilities and forensic integrity checkers in Python and C++17.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>&copy; 2026 Faizan Ahmed (faizi-cybsec) &bull; Cybersecurity Portfolio</span>
+      <div class="footer-links">
+        <a href="https://github.com/faizi-cybsec" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/faizi-cybsec/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.youtube.com/@Faizi.CybSec" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://x.com/faizicybsec" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="mailto:work.fayzan@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/terminal.js"></script>
+</body>
+</html>

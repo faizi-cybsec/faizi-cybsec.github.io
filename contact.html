@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Faizan Ahmad</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">&gt;_ <span>faizi</span>.cybsec</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <div class="prompt-line">faizan@soc:~$ ./connect.sh</div>
+        <h1 class="page-title">Get In Touch</h1>
+        <p class="page-subtitle">
+          Open to SOC L1 Analyst roles, Cybersecurity Internships, and open-source security collaborations.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="card">
+          <h3>Send a Message</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Jane Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" class="form-control" placeholder="jane@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" class="form-control" placeholder="SOC L1 / Internship Opportunity" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" class="form-control" placeholder="Write your message here..." required></textarea>
+            </div>
+            <div class="btn-group">
+              <button type="submit" class="btn btn-primary">Send via Email</button>
+              <button type="button" id="copy-email-btn" class="btn btn-outline">Copy Email</button>
+            </div>
+            <div id="form-status" class="form-status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <div class="grid-2" style="align-content:start;">
+          <div class="card">
+            <h3>Email</h3>
+            <p>Direct inquiries &amp; opportunities</p>
+            <a href="mailto:work.fayzan@gmail.com">work.fayzan@gmail.com</a>
+          </div>
+          <div class="card">
+            <h3>GitHub</h3>
+            <p>Security tools &amp; source code</p>
+            <a href="https://github.com/faizi-cybsec" target="_blank" rel="noopener noreferrer">github.com/faizi-cybsec</a>
+          </div>
+          <div class="card">
+            <h3>LinkedIn</h3>
+            <p>Professional profile &amp; network</p>
+            <a href="https://www.linkedin.com/in/faizi-cybsec/" target="_blank" rel="noopener noreferrer">linkedin.com/in/faizi-cybsec</a>
+          </div>
+          <div class="card">
+            <h3>YouTube &amp; X</h3>
+            <p>Cybersecurity content &amp; updates</p>
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <a href="https://www.youtube.com/@Faizi.CybSec" target="_blank" rel="noopener noreferrer">youtube.com/@Faizi.CybSec</a>
+              <a href="https://x.com/faizicybsec" target="_blank" rel="noopener noreferrer">x.com/faizicybsec</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>&copy; 2026 Faizan Ahmad (faizi-cybsec) &bull; Cybersecurity Portfolio</span>
+      <div class="footer-links">
+        <a href="https://github.com/faizi-cybsec" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/faizi-cybsec/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.youtube.com/@Faizi.CybSec" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://x.com/faizicybsec" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="mailto:work.fayzan@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
