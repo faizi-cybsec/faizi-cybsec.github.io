@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#00ff88"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0a0e17"/>
+  <path d="M32 7 L53 15 V31 C53 44 43.5 53.5 32 57 C20.5 53.5 11 44 11 31 V15 Z"
+        fill="#0f1624" stroke="url(#cyberGrad)" stroke-width="3"/>
+  <path d="M21 26 L28 32 L21 38" fill="none" stroke="#00ff88" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="31" y1="38" x2="43" y2="38" stroke="#00f0ff" stroke-width="3.2" stroke-linecap="round"/>
+</svg>
